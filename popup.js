@@ -12,9 +12,6 @@ const GETSONGBUTTONEVENT = (function() {
                 chrome.runtime.sendMessage({
                     request: 'postUrlToApi',
                     url: response.url
-                },
-                function(response) {
-                    console.log('posting: ', JSON.stringify(response.dataFetched, null, 4));
                 });
             });
         });
