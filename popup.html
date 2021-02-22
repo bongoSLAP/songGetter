@@ -2,12 +2,21 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <!--<link rel="stylesheet" href="styles.css">-->
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>songGetter</h1>
-    <p>Current Song: <span id="current-song-title"></span></p>
-    <button id="get-song">Get Song</button>
+    <h1>S▶ngGetter</h1>
+    <div id="download-ui-container">
+        <div id="download-song-container" class="ui-sub-container hidden">
+            <p class="label download-button-label">Current Song: <span id="current-song-title" class="title"></span></p>
+            <img id="get-song-button" class="download-button" height="30px" width=30px src=images/download-button.png>
+        </div>
+        <hr>
+        <div id="download-playlist-container" class="ui-sub-container hidden">
+            <p class="label download-button-label">Current Playlist: <span id="current-playlist-title" class="title"></span></p>
+            <img id="get-playlist-button" class="download-button" height="30px" width=30px src=images/download-button.png>
+        </div>
+    </div>
     <script src="popup.js"></script>
 </body>
 </html>
